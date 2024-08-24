@@ -179,13 +179,13 @@ jobs:
         with:
           python-version: '3.8'
 
-      - name: Replace
-        env:
-          SOME_SECRET_KEY: ${{ secrets.SOME_SECRET_KEY }}
-          SOME_REPLACE_KEY: ${{ secrets.SOME_REPLACE_KEY }}
-          SOME_REPLACE_FILE: ${{ secrets.SOME_REPLACE_FILE }}
-        run: |
-          python tools/replace.py
+      # - name: Replace
+      #   env:
+      #     SOME_SECRET_KEY: ${{ secrets.SOME_SECRET_KEY }}
+      #     SOME_REPLACE_KEY: ${{ secrets.SOME_REPLACE_KEY }}
+      #     SOME_REPLACE_FILE: ${{ secrets.SOME_REPLACE_FILE }}
+      #   run: |
+      #     python tools/replace.py
 
       - name: Set up signing files
         run: |
