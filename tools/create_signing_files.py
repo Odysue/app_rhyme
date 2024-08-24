@@ -5,15 +5,7 @@ import base64
 apk_sign_pwd = os.getenv('APK_SIGN_PWD')
 apk_sign_jks = os.getenv('APK_SIGN_JKS')
 apk_sign_alias = os.getenv('APK_SIGN_ALIAS')
-print(type(apk_sign_pwd))
-if apk_sign_pwd is not None:
-    print(len(apk_sign_pwd))
-else:
-    print("apk_sign_pwd is not set")
-print(type(apk_sign_alias))
-print(len(apk_sign_pwd))
-print(type(apk_sign_jks))
-print(len(apk_sign_jks))
+
 
 
 # Ensure the directories exist
